@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class GameLOGIC {
+
+	public static void main(String[] args) {
+		int guess = 00;
+		int ptr = 0;
+		boolean ch = false;
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("welcome");
+		System.out.println("enter your name");
+		String name = scanner.next();
+		System.out.println("you are ready to sink the enemy ship captain "+name);
+		System.out.println("__________________");
+		for(int i=0;i<7;i++){
+			System.out.println("|* * * * * * *|");
+		}
+		System.out.println("__________________");
+		
+		GameDAO gameDAO = new GameDAO();
+		while (ch == false) {
+			System.out.println("enter the coordinates");
+			guess = scanner.nextInt();
+			ptr++;
+			ch = gameDAO.test(guess);
+		}
+		System.out.println("game is over");
+		int score = 109 - ptr;
+		System.out.println("your score is " + score);
+	}
+
+}
