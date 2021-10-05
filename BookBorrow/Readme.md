@@ -24,7 +24,7 @@ Sample Input and Output:<br/>
 6. Exit<br/>
 
 <br/>
-<br/>
+
 ### Enter your choice: 1
 Enter ID, Title and Author (Line by line)<br/>
 101<br/>
