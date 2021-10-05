@@ -1,7 +1,7 @@
 # Question
 There is a class Book, which has the attributes bookID, title and author. There are two categories of books, TextBooks and ReferenceBooks.<br/>
 The text books can be borrowed by a user while the reference books cannot be. There is an extra attribute status (default value is Available) <br/>
-and borrowedUser in the class TextBooks. There is an interface Borrowable which has methods checkIn and checkOut. The class Book implements<br/>
+and borrowedUser in the class TextBooks. There is an interface Borrowable which has methods checkIn and checkOut. The class Book implements 
 the Borrowable interface (Think and decide whether class Book is an abstract class or not).
 <br/>
 <br/>
